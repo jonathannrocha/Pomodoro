@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List Pomodo</title>
+    <link rel="stylesheet" href="./styles/style.css" >
+   
+</head>
+<body>
+    <header>
+        <div>
+            <h1>Pomodoro</h1>
+            <div class="settings"><img src="./img/settings.svg" alt=""></div>
+        </div>
+        <div class="row-header"></div>
+    </header>
+    <main >
+        <div class="contanier">
+            <div class="pomo">
+                <div class="inf">
+                    <div class="bt-inf interval">
+                        <spam class="duration">Pomodoro</spam>
+                    </div>
+                    <div class="bt-inf break">
+                        <spam class="duration">Short Break</spam>
+                    </div>
+                </div>
+                <div class="time">
+                    <span>25:00</span>
+                </div>
+                <div class="bt">
+                    <div class="restarttime"><img class="restart" src="./img/rotate-right.svg" alt="restart icon"></div>
+                    <button class="btn btn-after btn-animated">Start</button>
+                    <div class="next"> <img src="./img/next-white3.png" alt="next icon"></div>
+                </div>
+                  
+            </div>
+        </div>
+
+        <div class="container-conf">
+            <div class="config">
+               <div class="row">
+                   <span>Settings</span>
+                   <span class="bt-close">X</span>
+               </div>
+               <hr>
+               <div class="times">
+                   <div class="input">
+                       <label for="#">Pomodoro</label>
+                       <input id="pomodorotimeinput" min="10" type="number">
+                   </div>
+                   <div class="input">
+                    <label for="#">Short Break</label>
+                    <input id="breaktimeinput" min="5" type="number">
+                </div>
+               </div>
+            </div>  
+        </div>
+    </main>
+
+    
+    
+    
+<script type="text/javascript" src="./js/script.js"></script>
+</body>
+</html>
