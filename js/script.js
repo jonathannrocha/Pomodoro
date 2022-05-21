@@ -5,7 +5,7 @@ const settings  = document.querySelector('.settings'),
       infTime = document.querySelector('.time span'),
       btStopStart = document.querySelector('.btn '),
       btNext = document.querySelector('.next'),
-      timerAtualização = 1,
+      timerAtualização = 1000,
       btRestart = document.querySelector('.restarttime'),
       btsettings = document.querySelector('.settings');
      
