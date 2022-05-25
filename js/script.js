@@ -194,17 +194,16 @@ function configpomo() {
     inputPomo = document.querySelector('#pomodorotimeinput'),
     inputBreak = document.querySelector('#breaktimeinput'),
     btclose = document.querySelector('.bt-close');
-
     pomo.style.display = 'none';
     config.style.display = 'block'
     inputPomo.value = timePomodoro;
     inputBreak.value = timeBreak;
 
     btclose.addEventListener('click', ()=>{
-
-      
-        alertclick()
         
+        
+        alertclick()
+      
         let pomoValue =  inputPomo.value,
             breakValue = inputBreak.value;
 
@@ -219,4 +218,20 @@ function configpomo() {
         config.style.display = 'none';
         
     })
+
+    inputvalidator()
 }
+
+function inputvalidator() {
+    const  inputvalidator = document.querySelectorAll('.validator')
+
+    inputvalidator.forEach((e)=> {
+        e.addEventListener('change', (a)=> {
+            let value = a.target.value
+
+            value = value < 1 ? a.target.value = 1 : a.target.value = value;
+        })
+
+    })
+}
+
